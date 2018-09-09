@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="2" parallel="true">
+	<listeners>
+		<listener class-name="com.mani.retry.listeners.RetryListener"></listener>
+	</listeners>
+	<test name="Testcase1 Firefox Browser">
+		<parameter name="testingBrowser" value="firefox"></parameter>
+		<classes>
+			<class name="com.mani.retry.tests.TestCase1" />
+			<class name="com.mani.retry.tests.TestCase2" />
+			<class name="com.mani.retry.tests.TestCase3" />
+			<class name="com.mani.retry.tests.TestCase4" />
+		</classes>
+	</test>
+	<test name="Testcase1 chrome Browser">
+		<parameter name="testingBrowser" value="chrome"></parameter>
+		<classes>
+			<class name="com.mani.retry.tests.TestCase1" />
+			<class name="com.mani.retry.tests.TestCase2" />
+			<class name="com.mani.retry.tests.TestCase3" />
+			<class name="com.mani.retry.tests.TestCase4" />
+		</classes>
+	</test>
+</suite>
