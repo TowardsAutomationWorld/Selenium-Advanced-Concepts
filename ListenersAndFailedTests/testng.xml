@@ -14,7 +14,7 @@
 		</classes>
 	</test>
 	<test name="Testcase1 chrome Browser">
-		<parameter name="testingBrowser" value="chrome"></parameter>
+		<parameter name="testingBrowser" value="firefox"></parameter>
 		<classes>
 			<class name="com.mani.retry.tests.TestCase1" />
 			<class name="com.mani.retry.tests.TestCase2" />
