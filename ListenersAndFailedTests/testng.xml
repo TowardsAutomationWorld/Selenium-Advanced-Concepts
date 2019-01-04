@@ -10,7 +10,6 @@
 			<class name="com.mani.retry.tests.TestCase1" />
 			<class name="com.mani.retry.tests.TestCase2" />
 			<class name="com.mani.retry.tests.TestCase3" />
-			<class name="com.mani.retry.tests.TestCase4" />
 		</classes>
 	</test>
 	<test name="Testcase1 chrome Browser">
@@ -19,7 +18,6 @@
 			<class name="com.mani.retry.tests.TestCase1" />
 			<class name="com.mani.retry.tests.TestCase2" />
 			<class name="com.mani.retry.tests.TestCase3" />
-			<class name="com.mani.retry.tests.TestCase4" />
 		</classes>
 	</test>
 </suite>
