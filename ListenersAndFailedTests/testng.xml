@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite" thread-count="2" parallel="true">
+<suite name="Suite" thread-count="5" parallel="true">
 	<listeners>
-		<listener class-name="com.mani.retry.listeners.RetryListener"></listener>
+		<listener class-name="com.subbu.retry.listeners.RetryListener"></listener>
 	</listeners>
-	<test name="Testcase1 Firefox Browser">
-		<parameter name="testingBrowser" value="firefox"></parameter>
+	<test name="Firefox Browser">
+		<parameter name="retryBrowser" value="Firefox"/>
 		<classes>
-			<class name="com.mani.retry.tests.TestCase1" />
-			<class name="com.mani.retry.tests.TestCase2" />
-			<class name="com.mani.retry.tests.TestCase3" />
+			<class name="com.subbu.retry.tests.TestCase1" />
+			<class name="com.subbu.retry.tests.TestCase2" />
+			<class name="com.subbu.retry.tests.TestCase3" />
 		</classes>
 	</test>
-	<test name="Testcase1 chrome Browser">
-		<parameter name="testingBrowser" value="firefox"></parameter>
+	<test name="Chrome Browser">
+		<parameter name="retryBrowser" value="Chrome"/>
 		<classes>
-			<class name="com.mani.retry.tests.TestCase1" />
-			<class name="com.mani.retry.tests.TestCase2" />
-			<class name="com.mani.retry.tests.TestCase3" />
+			<class name="com.subbu.retry.tests.TestCase1" />
+			<class name="com.subbu.retry.tests.TestCase2" />
+			<class name="com.subbu.retry.tests.TestCase3" />
 		</classes>
 	</test>
 </suite>
